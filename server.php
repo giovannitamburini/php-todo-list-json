@@ -23,35 +23,42 @@ Permettere il toggle del task (completato/non completato)
 Abilitare l’eliminazione di un task
 */
 
-$todos = [
-    [
-        "name" => 'HTML',
-        "status" => 'undone',
-    ],
-    [
-        "name" => 'CSS',
-        "status" => 'undone',
-    ],
-    [
-        "name" => 'Javascript',
-        "status" => 'undone',
-    ],
-    [
-        "name" => 'Python',
-        "status" => 'undone',
-    ],
-    [
-        "name" => 'Java',
-        "status" => 'undone',
-    ],
-    [
-        "name" => 'PHP',
-        "status" => 'undone',
-    ],
-];
+// $todos = [
+//     [
+//         "name" => 'HTML',
+//         "status" => 'undone',
+//     ],
+//     [
+//         "name" => 'CSS',
+//         "status" => 'undone',
+//     ],
+//     [
+//         "name" => 'Javascript',
+//         "status" => 'undone',
+//     ],
+//     [
+//         "name" => 'Python',
+//         "status" => 'undone',
+//     ],
+//     [
+//         "name" => 'Java',
+//         "status" => 'undone',
+//     ],
+//     [
+//         "name" => 'PHP',
+//         "status" => 'undone',
+//     ],
+// ];
 
-// stampo a schermo il mio array PHP
-// var_dump($languages);
+// dopo aver spostato l'array in un file Json, devo recuperarlo e salvarlo in questa pagina per poterlo utilizzare
+$stringTodos = file_get_contents('todos.json');
+
+// var_dump($stringTodos);
+
+// devo trasformare la stringa in un array di oggetti php
+$todos = json_decode($stringTodos);
+
+// var_dump($todos);
 
 // per stampare a schermo l'array php in JSON devo utilizzare la funzione json_encode
 // ma in questo modo stamperà l'array come se fosse una stringa

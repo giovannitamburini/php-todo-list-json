@@ -1,0 +1,26 @@
+[
+    {
+        "name": "HTML",
+        "status": "undone"
+    },
+    {
+        "name": "CSS",
+        "status": "undone"
+    },
+    {
+        "name": "Javascript",
+        "status": "undone"
+    },
+    {
+        "name": "Python",
+        "status": "undone"
+    },
+    {
+        "name": "Java",
+        "status": "undone"
+    },
+    {
+        "name": "PHP",
+        "status": "undone"
+    }
+]
